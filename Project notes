@@ -1,0 +1,43 @@
+
+    this file is for us to pass notes back and forth for implementation needs of our project
+
+    Django Notes:
+        avoid naming projects after built-in Python or Django components. NO "Django" or "test"
+
+        The outer :file:`mysite/` root directory is just a container for our Django project.
+
+        `manage.py`: A command-line utility that lets us interact with this Django project in various ways.
+            more details on django git in: docs/ref/django-admin
+
+        The inner :file:`mysite/` directory is the actual Python package for your project. Its name is the
+        Python package name you'll need to use to import anything inside it (e.g. ``mysite.urls``).
+
+        :file:`mysite/settings.py`: Settings/configuration for this Django project.  :doc:`/topics/settings`
+        will tell you all about how settings work.
+
+        file:`mysite/urls.py`: The URL declarations for this Django project; a "table of contents" of your
+        Django-powered site. You can read more about URLs on git: docs/topics/http/urls`.
+
+        file:`mysite/wsgi.py`: An entry-point for WSGI-compatible web servers to serve your project.
+        See docs/howto/deployment/wsgi/index` for more details.
+
+            How to run the test server and web page:
+                   Change into the outer :file:`mysite` directory:
+                   RUN:     python manage.py runserver
+                   OUTPUT:
+                    Performing system checks...
+
+                    System check identified no issues (0 silenced).
+
+                    You have 14 unapplied migration(s). Your project may not work properly until you apply the migrations
+                    for app(s): admin, auth, contenttypes, sessions. Run 'python manage.py migrate' to apply them.
+                    April 22, 2018 - 12:46:59
+                    Django version 2.0.4, using settings 'mysite.settings'
+                    Starting development server at http://127.0.0.1:8000/
+                    Quit the server with CTRL-BREAK.
+
+            "click" http://127.0.0.1:8000/
+                this should start a web page containing a test which verifies the local server is up and running a web page.
+
+
+
