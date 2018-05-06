@@ -12,7 +12,7 @@ for system in universe['systems']:
         else:
             data +=  "\"" + str(universe['stargates'][system_stargate_string]['destination']['system_id']) + "\""
     
-    data += "], \"kills\" : \"0\"},"
+    data += "], \"kills\" : \"0\", \"security_status\":" + str(universe['systems'][system]['security_status']) +",\"system_name\":\"" + universe['systems'][system]['name'] + "\"},"
 data += "}"
 print(data)
         
