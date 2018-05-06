@@ -2,12 +2,14 @@
 #map graph hash table
 
 import json
-
+connections =[]
 class system:
+
+
 
     def __init__(self, key, connections, sec, kills, name):
         self.key = key
-        self.connections
+        self.connections = {}
         self.sec = sec
         self.kills = kills
         self.name = name
@@ -21,7 +23,7 @@ class Hash:
 
 
     def addSystem(self, key, connections, sec, kills, name):
-        s.system(key,sec,kills)
+        system(key, connections, sec, kills, name)
      #   for i in range(self.systems):
      #       if 
         self.systems += 1
@@ -35,12 +37,12 @@ class Hash:
             for n in read_file['systems'][i]['connections']:
                 connections.append(n)
 
-            print(connections)
-            sec = read_file['systems'][i]['secureity_status']
+            sec = read_file['systems'][i]['security_status']
             kills = read_file['systems'][i]['kills']
             name = read_file['systems'][i]['system_name']
         self.addSystem(key, connections, sec, kills, name)
             
 
+systems = {}
 h = Hash(1)
 h.readFile()
