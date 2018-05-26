@@ -4,7 +4,7 @@
  
 from collections import defaultdict
 import json
-pm = __import__("hashMap")
+#pm = __import__("hashMap")
 
 
  
@@ -16,18 +16,21 @@ class Graph:
         self.graph = [] # default dictionary 
                                 # to store graph
          
-    def CreateGraph(self, table):
-        for items in table:
-            source = table['system_id'][items]
-            for adj_sys in table['systems'][items]['connections']:
-                destination = str(table['systems'][items]['connections'][adj_sys])
-                weight = table.find_Sec(destination)
-                addEdge(source, destination, weight)
+    def CreateGraph(self):
+        with open('map_connections.json', 'r') as f:
+            read_file = json.load(f)
+
+        for items in read_file['systems'].keys():
+            source = int(read_file['systems'][items]['system_id'])
+            weight = float(read_file['systems'][items]['security_status'])
+            for adj_sys in read_file['systems'][items]['connections']:
+                self.addEdge(source, adj_sys, weight)
 
 
     # function to add an edge to graph
     def addEdge(self,u,v,w):
         self.graph.append([u,v,w])
+        print("\nsource: ", u, " dest: ", v, " weight: ", w)
  
     # A utility function to find set of an element i
     # (uses path compression technique)
@@ -70,13 +73,13 @@ class Graph:
                 # given graph, we can create a copy of graph
         self.graph =  sorted(self.graph,key=lambda item: item[2])
  
-        parent = [] ; rank = []
+        parent = [] 
+        rank = []
  
         # Create V subsets with single elements
         for node in range(self.V):
             parent.append(node)
             rank.append(0)
-     
         # Number of edges to be taken is equal to V-1
         while e < self.V -1 :
  
@@ -103,10 +106,9 @@ class Graph:
             print ("%d -- %d == %d" % (u,v,weight))
  
 # Driver code
-g = Graph(pm.system_tab.num_systems)
+g = Graph(5215)
 
-g.CreateGraph(pm.system_tab.systemsDic)
+g.CreateGraph()
  
 g.KruskalMST()
  
-#This code is contributed by Neelam Yadav

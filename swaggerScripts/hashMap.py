@@ -14,10 +14,10 @@ class table:
 	
 	def addSystem(self, key, connections, sec, kills, name):
 	    if key not in self.systemsDic:
-	    	self.systemsDic[key] = connections
-	    	self.systemsDic[key] += sec
-	    	self.systemsDic[key] += kills
-	    	self.systemsDic[key] += name
+	    	self.systemsDic[key] = key
+	    	#self.systemsDic[key] += sec
+	    	#self.systemsDic[key] += kills
+	    	#self.systemsDic[key] += name
 	    	#print("\nKey = ", key)
 	    	self.num_systems += 1
 
@@ -36,9 +36,15 @@ class table:
 
 	    f.close()
 
+	def wait(self):
+		i = 0
+		while i < 10000000:
+			i += 1
+	
 	def print_table(self):
 		for i in self.systemsDic:
 			print("\n ", i)
+			#self.wait()
 
 	def find_Sec(self, key):
 	    for i in self.systemsDic:
@@ -56,6 +62,6 @@ system_tab = table(1)
 system_tab.readFile()
 #Print the number of systems
 system_tab.print_table()
-#print("\n", system_tab.systems)
+print("\n", system_tab.num_systems)
 
 
