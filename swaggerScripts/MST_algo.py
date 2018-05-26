@@ -4,7 +4,8 @@
  
 from collections import defaultdict
 import json
-#pm = __import__("hashMap")
+import random
+pm = __import__("hashMap")
 
 
  
@@ -13,6 +14,8 @@ class Graph:
  
     def __init__(self,vertices):
         self.V= vertices #No. of vertices
+        self.verts = 0
+        self.edges = 0
         self.graph = [] # default dictionary 
                                 # to store graph
          
@@ -21,20 +24,36 @@ class Graph:
             read_file = json.load(f)
 
         for items in read_file['systems'].keys():
-            source = int(read_file['systems'][items]['system_id'])
-            weight = float(read_file['systems'][items]['security_status'])
+            if self.verts > self.V - 1:
+                break
+            source = int(read_file['systems'][items]['system_id']) - 30000001
+            self.verts += 1
+            weight = random.randint(1, 10) #float(read_file['systems'][items]['security_status'])
             for adj_sys in read_file['systems'][items]['connections']:
-                self.addEdge(source, adj_sys, weight)
-
+                adj_sys = int(adj_sys) - 30000001
+                #if source > self.V - 1:
+                #   print("\nPanic: found id", source)
+                #   source = random.randint(0, self.V-1)
+                #if adj_sys > self.V - 1:
+                #   print("\nPanic: found id", adj_sys)
+                #   adj_sys = random.randint(0, self.V-1)
+                #else:
+                #self.addEdge(int(source), int(adj_sys), int(weight))
+                if source > self.V - 1 or adj_sys > self.V - 1:
+                    print("\nPanic: found id", source)
+                else:
+                    self.addEdge(int(source), int(adj_sys), int(weight))
 
     # function to add an edge to graph
     def addEdge(self,u,v,w):
         self.graph.append([u,v,w])
-        print("\nsource: ", u, " dest: ", v, " weight: ", w)
+        self.edges += 1
+        #print("\nsource: ", u, " dest: ", v, " weight: ", w)
  
     # A utility function to find set of an element i
     # (uses path compression technique)
     def find(self, parent, i):
+        #print("\n", i)
         if parent[i] == i:
             return i
         return self.find(parent, parent[i])
@@ -81,10 +100,11 @@ class Graph:
             parent.append(node)
             rank.append(0)
         # Number of edges to be taken is equal to V-1
-        while e < self.V -1 :
+        while e < self.V -1 and i < self.edges - 1:
  
             # Step 2: Pick the smallest edge and increment 
                     # the index for next iteration
+            print("\n", i)
             u,v,w =  self.graph[i]
             i = i + 1
             x = self.find(parent, u)
@@ -106,9 +126,12 @@ class Graph:
             print ("%d -- %d == %d" % (u,v,weight))
  
 # Driver code
-g = Graph(5215)
+g = Graph(pm.system_tab.num_systems)
 
 g.CreateGraph()
  
+print("\nVertices: ",g.verts)
+pm.system_tab.wait()
+
 g.KruskalMST()
  
