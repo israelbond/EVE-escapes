@@ -1,8 +1,15 @@
 import json
 import urllib.request
 #open map_connections.json to add kill data
-with open('map_connections.json', 'r') as f:
+with open('map_connections.json', 'r+') as f:
         universe = json.load(f)
+f.close()
+count = 0
+for sys in universe['systems']:
+    if int(universe['systems'][str(sys)]['kills']) > 0:
+        count += 1
+print(count)
+
 #open connection to CCP swagger for kill data
 with urllib.request.urlopen('https://esi.tech.ccp.is/latest/universe/system_kills/') as h1:
     universe_kills = json.loads(h1.read().decode('utf-8'))
@@ -17,8 +24,5 @@ for system in universe_kills:
         zCount += 1
 print(zCount)
 
-count = 0
-for sys in universe['systems']:
-    if int(universe['systems'][str(sys)]['kills']) > 0:
-        count += 1
-print(count)
+with open('map_connections.json', 'w') as jsonFile:
+    json.dump(universe , jsonFile)
