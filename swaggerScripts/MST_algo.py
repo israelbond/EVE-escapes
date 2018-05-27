@@ -5,7 +5,7 @@
 from collections import defaultdict
 import json
 import random
-pm = __import__("hashMap")
+pm = __import__("hashMap")#object representing the imported hash map module
 
 
  
@@ -13,42 +13,54 @@ pm = __import__("hashMap")
 class Graph:
  
     def __init__(self,vertices):
-        self.V= vertices #No. of vertices
-        self.verts = 0
-        self.edges = 0
+        self.V= vertices #No. of expected vertices
+        self.verts = 0 #No. of known vertices
+        self.edges = 0#No. of known edges
         self.graph = [] # default dictionary 
                                 # to store graph
-         
+     
+    #This function will contrust the graph that the algorithm will make into a minimal spanning tree
     def CreateGraph(self):
+	#opens the map_connections file to read from
         with open('map_connections.json', 'r') as f:
             read_file = json.load(f)
 
+	#will read as many systems as ther are unique keys in the json file
         for items in read_file['systems'].keys():
+
+	    #if the number of vertices created exceeds the expected number of vertices then terminate reading
             if self.verts > self.V - 1:
                 break
+	    #read in a system id as a source vertex
+	    #and subtract the residual 30 million to fit within the bounds
+	    #of the graph.
             source = int(read_file['systems'][items]['system_id']) - 30000001
+
+	    #Add one to the known amount of vertexes in the graph
             self.verts += 1
-            weight = random.randint(1, 10) #float(read_file['systems'][items]['security_status'])
+
+	    #for the adjacent systems(or elements)in the connections array create a new edge to that system
             for adj_sys in read_file['systems'][items]['connections']:
+		#perform the same subtraction as was done for the source
                 adj_sys = int(adj_sys) - 30000001
-                #if source > self.V - 1:
-                #   print("\nPanic: found id", source)
-                #   source = random.randint(0, self.V-1)
-                #if adj_sys > self.V - 1:
-                #   print("\nPanic: found id", adj_sys)
-                #   adj_sys = random.randint(0, self.V-1)
-                #else:
-                #self.addEdge(int(source), int(adj_sys), int(weight))
+
+	        #temporarily assign a value to the weight of the edge
+                weight = random.randint(1, 10)
+		
+		#if the system id for the adjacent system or the source was greater than
+		#the expected number of vertices then omit this edge,
+		#else create the edge
                 if source > self.V - 1 or adj_sys > self.V - 1:
-                    print("\nPanic: found id", source)
+                    #debug: print("\nPanic: found id", source)
                 else:
+		    #adds the edge to the graph
                     self.addEdge(int(source), int(adj_sys), int(weight))
 
     # function to add an edge to graph
     def addEdge(self,u,v,w):
         self.graph.append([u,v,w])
-        self.edges += 1
-        #print("\nsource: ", u, " dest: ", v, " weight: ", w)
+        self.edges += 1#add one to the number of known edges
+        #debug: print("\nsource: ", u, " dest: ", v, " weight: ", w)
  
     # A utility function to find set of an element i
     # (uses path compression technique)
@@ -100,11 +112,14 @@ class Graph:
             parent.append(node)
             rank.append(0)
         # Number of edges to be taken is equal to V-1
+	# i should be never exceed the number of edges
         while e < self.V -1 and i < self.edges - 1:
  
             # Step 2: Pick the smallest edge and increment 
                     # the index for next iteration
-            print("\n", i)
+
+            #debug: print("\n", i)
+
             u,v,w =  self.graph[i]
             i = i + 1
             x = self.find(parent, u)
@@ -126,12 +141,18 @@ class Graph:
             print ("%d -- %d == %d" % (u,v,weight))
  
 # Driver code
+
+#create the graph object using the number of systems from hashMap.py
 g = Graph(pm.system_tab.num_systems)
 
+#create the graph
 g.CreateGraph()
  
 print("\nVertices: ",g.verts)
+print("\nEdgess: ",g.edges)
+
+#pause scrolling for debug purposes
 pm.system_tab.wait()
 
+#Algorithm to builf the minimal spanning tree
 g.KruskalMST()
- 
