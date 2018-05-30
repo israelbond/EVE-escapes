@@ -22,6 +22,7 @@ readTextFile("map_connections.json", function(text){
 			row = table.insertRow(0);
 			cell0 = row.insertCell(0);
 			cell0.innerHTML = data.systems[system_id].system_name;
+			cell0.color =
 			cell1 = row.insertCell(1);
 			cell1.innerHTML = system_id;
 			for(i = 0; i < data.systems[system_id].connections.length; i++){
@@ -30,4 +31,5 @@ readTextFile("map_connections.json", function(text){
 				cell2.innerHTML = data.systems[system_id].connections[i];
 		}
 		}
+
 });
