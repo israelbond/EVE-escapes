@@ -4,24 +4,28 @@ import networkx as nx
 import json
 from collections import OrderedDict
 with open('map_connections.json', 'r') as f:
-    input_data = f.read()
+    universe = json.loads(f.read(), object_pairs_hook=OrderedDict)
 
-universe = json.loads(input_data.decode('utf-8'), object_pairs_hook=OrderedDict)
 G = nx.Graph()
 
 for system in universe['systems']:
-    print(system)
     for connection in universe['systems'][system]['connections']:
         w = int(universe['systems'][connection]['kills'])
-        G.add_edge(system, connection, weight = w)
+        G.add_edge(universe['systems'][system]['system_name'], universe['systems'][connection]['system_name'], weight = w)
 
 T =nx.minimum_spanning_tree(G, weight = 'weight', algorithm = 'kruskal', ignore_nan = False)
 
+#D = nx.dijkstra_path(T, '30000001', '30001028')
+P = nx.dijkstra_path(G, 'Amarr', 'Jita')
+count = 0
+for e in P:
+    count += 1
 
 #print(sorted(T.edges(data=True)))
 
 #sorted(T.edges(data=True))
-#print(nx.dijkstra_path(T, '30000001', '30001028'))
+print(nx.dijkstra_path(G, 'Amarr', 'Jita'))
+print(count)
 #for e in list(G.edges):
 #    print(e)
 #elarge=[(u,v) for (u,v,d) in G.edges(data=True) if d['weight'] >0]
