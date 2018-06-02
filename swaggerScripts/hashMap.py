@@ -49,12 +49,12 @@ class table:
 			print("\n ", i)
 			#self.wait()
 
-	def find_Sec(self, key):
+	def find_kills(self, key):
 	    for i in self.systemsDic:
 	        if key not in self.systemsDic:
 	           break
 	        if i == key:
-	           return self.systemsDic['systems'][i]['security_status']
+	           return self.systemsDic['systems'][i]['kills']
  
 
 

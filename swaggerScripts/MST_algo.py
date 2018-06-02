@@ -34,27 +34,32 @@ class Graph:
 	    #read in a system id as a source vertex
 	    #and subtract the residual 30 million to fit within the bounds
 	    #of the graph.
-            source = int(read_file['systems'][items]['system_id']) - 30000001
+            source = str(int(read_file['systems'][items]['system_id']) - 30000001)
 
 	    #Add one to the known amount of vertexes in the graph
             self.verts += 1
 
 	    #for the adjacent systems(or elements)in the connections array create a new edge to that system
             for adj_sys in read_file['systems'][items]['connections']:
-		#perform the same subtraction as was done for the source
-                adj_sys = int(adj_sys) - 30000001
-
 	        #temporarily assign a value to the weight of the edge
                 weight = random.randint(1, 10)
+               # for things in read_file['systems'].keys():
+               #     if adj_sys == read_file['systems'][things]['system_id']:
+               #         weight = int(read_file['systems'][things]['kills'])
+               #         break
+		#perform the same subtraction as was done for the source
+                adj_sys = str(int(adj_sys) - 30000001)
 		
 		#if the system id for the adjacent system or the source was greater than
 		#the expected number of vertices then omit this edge,
 		#else create the edge
-                if source > self.V - 1 or adj_sys > self.V - 1:
-                    #debug: print("\nPanic: found id", source)
+                if int(source) > self.V - 1 or int(adj_sys) > self.V - 1:
+                    print("\nPanic: found id", source)#debug
                 else:
-		    #adds the edge to the graph
-                    self.addEdge(int(source), int(adj_sys), int(weight))
+                    #adds the edge to the graph
+                    self.addEdge(str(source), str(adj_sys), weight)
+
+            f.close()
 
     # function to add an edge to graph
     def addEdge(self,u,v,w):
@@ -66,7 +71,7 @@ class Graph:
     # (uses path compression technique)
     def find(self, parent, i):
         #print("\n", i)
-        if parent[i] == i:
+        if parent[i] == int(i):
             return i
         return self.find(parent, parent[i])
  
@@ -139,10 +144,26 @@ class Graph:
         for u,v,weight  in result:
             #print str(u) + " -- " + str(v) + " == " + str(weight)
             print ("%d -- %d == %d" % (u,v,weight))
+        return result
  
-# Driver code
 
-#create the graph object using the number of systems from hashMap.py
+
+    def shortest_path(graph, start, end, path=[]):
+            path = path + [start]
+            if start == end:
+                return path
+            if not graph.has_key(start):
+                return None
+            shortest = None
+            for node in graph[start]:
+                if node not in path:
+                    newpath = find_shortest_path(graph, node, end, path)
+                    if newpath:
+                        if not shortest or len(newpath) < len(shortest):
+                            shortest = newpath
+            return shortest 
+
+#allocates the graph obj from the informatiomn gathered by hashmap.py
 g = Graph(pm.system_tab.num_systems)
 
 #create the graph
@@ -152,7 +173,9 @@ print("\nVertices: ",g.verts)
 print("\nEdgess: ",g.edges)
 
 #pause scrolling for debug purposes
-pm.system_tab.wait()
+#pm.system_tab.wait()
 
 #Algorithm to builf the minimal spanning tree
-g.KruskalMST()
+result = g.KruskalMST()
+
+g.shortest_path(result, '1', '3122')
