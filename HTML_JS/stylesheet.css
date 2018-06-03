@@ -1,0 +1,34 @@
+body, html {
+    background-color: chocolate;
+    border: 5px darkred;
+    height: 100%;
+    display: grid;
+
+}
+
+span{
+    margin: auto;
+    border: 2px blueviolet;
+}
+
+table{
+    text-align-all: justify;
+    border: 2px aqua;
+}
+
+th {
+    border: 2px solid black ;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px
+}
+
+section {
+  float: bottom;
+  width: 30%;
+  margin: auto;
+}

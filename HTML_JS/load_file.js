@@ -11,7 +11,7 @@ function readTextFile(file, callback) {
     rawFile.send(null);
 }
 //add data to table using getElementById and layout of json file
-readTextFile("map_connections.json", function(text){
+readTextFile("../swaggerScripts/map_connections.json", function(text){
 	    var data = JSON.parse(text);
 	    var table = document.getElementById("system_table");
 	    var row;
