@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- thank you stackoverflow!  --> 
+<body>
+
+<form id = "post_form">
+	From:<br>
+	<input type="text" id="frm" name="from"><br>
+	To:<br>
+	<input type="text" name="end"><br>
+	<button onclick="send_data()" name="button"></button>
+</form>
+
+
+
+</body>
+
+<script type = "text/javascript" id = "ajax_call">
+function send_data(){
+	var from = document.getElementById("frm");
+	var from_value = from.value;
+	console.log(from_value);
+	$.ajax({
+		type: "POST",
+		url: "../swaggerscripts/networkxwork.py",
+		data: { param: from_value},
+		success: callbackFunc
+	});
+ }
+
+function callbackFunc(response) {
+	console.log(response);
+}
+
+</script>
