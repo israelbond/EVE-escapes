@@ -1,0 +1,6 @@
+body{
+    height: 1080px;
+    width: 1920px;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+}
