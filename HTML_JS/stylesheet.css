@@ -1,5 +1,5 @@
 body, html {
-    background-color: chocolate;
+    background-color: cornflowerblue;
     border: 5px darkred;
     height: 100%;
     display: grid;
@@ -8,15 +8,18 @@ body, html {
 
 span{
     margin: auto;
-    border: 2px blueviolet;
+    border: 5px blueviolet;
 }
 
 table{
-    text-align-all: justify;
-    border: 2px aqua;
+    text-align-all: left;
+    border: 3px aqua;
+    color: antiquewhite;
 }
 
 th {
+    column-rule-style: groove;
+    background-color: darkcyan;
     border: 2px solid black ;
 }
 
@@ -24,7 +27,7 @@ th {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px
+    padding: 1px
 }
 
 section {
