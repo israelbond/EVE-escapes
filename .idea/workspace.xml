@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="cb8da823-f56c-4bc7-abab-b423c8ee0392" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/swaggerScripts/loops_practice.html" beforeDir="false" afterPath="$PROJECT_DIR$/swaggerScripts/loops_practice.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/swaggerScripts/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/swaggerScripts/styles.css" afterDir="false" />
@@ -9,6 +10,13 @@
 =======
     <list default="true" id="cb8da823-f56c-4bc7-abab-b423c8ee0392" name="Default" comment="" />
 >>>>>>> 92a17bb42fe90e1578696027d4ed6f672a996d41
+=======
+    <list default="true" id="ec5ed721-2dcd-4b37-a965-b65d92499557" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_JS/displaypath.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_JS/displaypath.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_JS/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_JS/stylesheet.css" afterDir="false" />
+    </list>
+>>>>>>> Swager
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +24,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/EVE_escapes$pretty.coverage" NAME="pretty Coverage Results" MODIFIED="1527097304487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swaggerScripts" />
+    <SUITE FILE_PATH="coverage/EVE_escapes$map.coverage" NAME="map Coverage Results" MODIFIED="1527098127004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swaggerScripts" />
+    <SUITE FILE_PATH="coverage/EVE_escapes$MST_algo.coverage" NAME="MST_algo Coverage Results" MODIFIED="1527098426677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swaggerScripts" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="loops_practice.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/swaggerScripts/loops_practice.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -28,6 +42,45 @@
             <state relative-caret-position="340">
               <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
 >>>>>>> 92a17bb42fe90e1578696027d4ed6f672a996d41
+=======
+      <file leaf-file-name="stylesheet.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HTML_JS/stylesheet.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="path.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HTML_JS/path.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="load_file.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HTML_JS/load_file.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loadpath.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HTML_JS/loadpath.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loops_practice.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HTML_JS/loops_practice.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+>>>>>>> Swager
               <folding>
                 <element signature="n#style#0;n#th#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#th#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -36,6 +89,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/swaggerScripts/styles.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -46,6 +100,13 @@
             <state relative-caret-position="34">
               <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
 >>>>>>> 92a17bb42fe90e1578696027d4ed6f672a996d41
+=======
+      <file leaf-file-name="displaypath.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HTML_JS/displaypath.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+>>>>>>> Swager
             </state>
           </provider>
         </entry>
@@ -55,11 +116,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
-    <option name="SCHEME" value="Project" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,10 +127,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Project notes" />
         <option value="$PROJECT_DIR$/swaggerScripts/load_file.js" />
         <option value="$PROJECT_DIR$/swaggerScripts/loops_practice.html" />
         <option value="$PROJECT_DIR$/swaggerScripts/styles.css" />
+=======
+        <option value="$PROJECT_DIR$/swaggerScripts/stylesheet.css" />
+        <option value="$PROJECT_DIR$/HTML_JS/path.json" />
+        <option value="$PROJECT_DIR$/HTML_JS/load_file.js" />
+        <option value="$PROJECT_DIR$/HTML_JS/loops_practice.html" />
+        <option value="$PROJECT_DIR$/HTML_JS/loadpath.js" />
+        <option value="$PROJECT_DIR$/HTML_JS/displaypath.html" />
+        <option value="$PROJECT_DIR$/HTML_JS/stylesheet.css" />
+>>>>>>> Swager
       </list>
     </option>
   </component>
@@ -83,6 +153,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="6">
 <<<<<<< HEAD
     <option name="x" value="531" />
@@ -93,6 +164,13 @@
 >>>>>>> 92a17bb42fe90e1578696027d4ed6f672a996d41
     <option name="width" value="697" />
     <option name="height" value="735" />
+=======
+  <component name="ProjectFrameBounds">
+    <option name="x" value="134" />
+    <option name="y" value="42" />
+    <option name="width" value="1412" />
+    <option name="height" value="1000" />
+>>>>>>> Swager
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -109,45 +187,28 @@
             <path>
               <item name="EVE-escapes" type="b2602c69:ProjectViewProjectNode" />
               <item name="EVE-escapes" type="462c0819:PsiDirectoryNode" />
+              <item name="HTML_JS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EVE-escapes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EVE-escapes" type="462c0819:PsiDirectoryNode" />
               <item name="swaggerScripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="EVE-escapes" type="cbb8eebc:String" user="EVE-escapes" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="EVE-escapes" type="cbb8eebc:String" user="EVE-escapes" />
-              <item name=".idea" type="cbb8eebc:String" user=".idea" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="EVE-escapes" type="cbb8eebc:String" user="EVE-escapes" />
-              <item name="swaggerScripts" type="cbb8eebc:String" user="swaggerScripts" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ibond\PycharmProjects\EVE-escapes\swaggerScripts" />
+      <recent name="C:\Users\ibond\PycharmProjects\EVE-escapes\HTML_JS" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -162,8 +223,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.loops_practice.html">
-    <configuration name="html-table-test.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/EVE-escapes/swaggerScripts/html-table-test.html" />
+  <component name="RunManager" selected="JavaScript Debug.displaypath.html">
+    <configuration name="displaypath.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/EVE-escapes/HTML_JS/displaypath.html" />
+    <configuration name="loops_practice.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/EVE-escapes/HTML_JS/loops_practice.html" />
     <configuration name="loops_practice.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/EVE-escapes/swaggerScripts/loops_practice.html" />
     <configuration name="MST_algo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="EVE-escapes" />
@@ -203,39 +265,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="pretty" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="EVE-escapes" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/swaggerScripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/swaggerScripts/pretty.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.html-table-test.html" />
-      <item itemvalue="Python.pretty" />
       <item itemvalue="Python.map" />
       <item itemvalue="Python.MST_algo" />
       <item itemvalue="JavaScript Debug.loops_practice.html" />
+      <item itemvalue="JavaScript Debug.loops_practice.html (1)" />
+      <item itemvalue="JavaScript Debug.displaypath.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.displaypath.html" />
+        <item itemvalue="JavaScript Debug.loops_practice.html (1)" />
         <item itemvalue="JavaScript Debug.loops_practice.html" />
         <item itemvalue="Python.MST_algo" />
         <item itemvalue="Python.map" />
-        <item itemvalue="Python.pretty" />
-        <item itemvalue="JavaScript Debug.html-table-test.html" />
       </list>
     </recent_temporary>
   </component>
@@ -244,7 +287,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cb8da823-f56c-4bc7-abab-b423c8ee0392" name="Default" comment="" />
+      <changelist id="ec5ed721-2dcd-4b37-a965-b65d92499557" name="Default" comment="" />
       <created>1524184463188</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -253,6 +296,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
 =======
@@ -277,6 +321,22 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" />
       <window_info anchor="right" id="Database" order="3" />
+=======
+    <frame x="134" y="42" width="1412" height="1000" extended-state="0" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3299435" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.247851" />
+      <window_info anchor="right" id="R Packages" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+>>>>>>> Swager
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -297,6 +357,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/swaggerScripts/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -367,6 +428,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> Swager
     <entry file="file://$PROJECT_DIR$/mysite/polls/urls.py" />
     <entry file="file://$PROJECT_DIR$/mysite/mysite/urls.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -528,6 +591,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/manage.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swaggerScripts/newKills.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swaggerScripts/kills.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swaggerScripts/killmap.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/swaggerScripts/hashMap.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -535,17 +610,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/swaggerScripts/info.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/swaggerScripts/MST_algo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swaggerScripts/load_file.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -556,6 +627,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/swaggerScripts/load_file.js" />
+    <entry file="file://$PROJECT_DIR$/swaggerScripts/loops_practice.html" />
+    <entry file="file://$PROJECT_DIR$/HTML_JS/load_file.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/swaggerScripts/styles.css">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -577,12 +658,42 @@
         <state relative-caret-position="340">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
 >>>>>>> 92a17bb42fe90e1578696027d4ed6f672a996d41
+=======
+    <entry file="file://$PROJECT_DIR$/HTML_JS/loadpath.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML_JS/loops_practice.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+>>>>>>> Swager
           <folding>
             <element signature="n#style#0;n#th#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#th#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML_JS/displaypath.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML_JS/stylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML_JS/path.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
