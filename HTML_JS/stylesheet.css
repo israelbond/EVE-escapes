@@ -1,0 +1,37 @@
+body, html {
+    background-color: cornflowerblue;
+    border: 5px darkred;
+    height: 100%;
+    display: grid;
+
+}
+
+span{
+    margin: auto;
+    border: 5px blueviolet;
+}
+
+table{
+    text-align-all: left;
+    border: 3px aqua;
+    color: antiquewhite;
+}
+
+th {
+    column-rule-style: groove;
+    background-color: darkcyan;
+    border: 2px solid black ;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px
+}
+
+section {
+  float: bottom;
+  width: 30%;
+  margin: auto;
+}

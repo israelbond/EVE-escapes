@@ -1,19 +1,24 @@
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<!--formatting the table objects-->
-	<style> table, td { alignment: center; border: 1px solid black ; }</style>
-<meta charset="utf-8"/>
-<!-- script that tag that run load_file.js and puts them into the "system_table"-->
-<script type="text/javascript" src="load_file.js"></script>
+
+	<meta charset="utf-8" content="width=device-width" initial-scale=1 />
+	<!-- script that tag that run load_file.js and puts them into the "system_table"-->
+	<script type="text/javascript" src="load_file.js"></script>
 </head>
 <body>
-	<table>
-		<th style="background-color: burlywood"> system name </th>
-		<th style="background-color: darkgoldenrod"> system id </th>
-		<th style="background-color: deepskyblue"> connections </th>
+
+	<table class="content" >
+		<th style="background-color: yellow"> system name</th>
+		<th style="background-color: deepskyblue"> system id </th>
+		<th style="background-color: cornflowerblue"> connections </th>
 	</table>
+
 <!-- Note how we use table id in the javascript function in load_file.js-->
+<div class="content">
 	<table id="system_table">
 	</table>
+</div>
 </body>
 </html>
