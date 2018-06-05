@@ -1,34 +1,76 @@
 <!DOCTYPE html>
 <!-- thank you stackoverflow!  --> 
 <body>
-
-<form id = "post_form">
-	From:<br>
-	<input type="text" id="frm" name="from"><br>
-	To:<br>
-	<input type="text" name="end"><br>
-	<button onclick="send_data()" name="button"></button>
-</form>
-
-
-
-</body>
-
+<head>
+<meta charset = "utf-8"/>
+<script src= "jquery-3.3.1.js"></script>
 <script type = "text/javascript" id = "ajax_call">
-function send_data(){
-	var from = document.getElementById("frm");
-	var from_value = from.value;
-	console.log(from_value);
+/*function post_data(input){
+	//console.log(from_value);
 	$.ajax({
 		type: "POST",
-		url: "../swaggerscripts/networkxwork.py",
-		data: { param: from_value},
+		url: "mycgi.py",
+		data: { param: input},
 		success: callbackFunc
 	});
  }
 
 function callbackFunc(response) {
+	alert(response);
 	console.log(response);
 }
+*/
+//var from = document.getElementById("frm");
+//var from_value = from.value;
+$.ajax({
+        type: 'POST',
+        url: "mycgi.cgi",
+        data: {param: "hey"}, //passing some input here
+        dataType: "text",
+        success: function(response){
+           output = response;
+           alert(output);
+        }
+}).done(function(data){
+    console.log(data);
+    alert(data);
+});
+</script>
+
+<!--
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		$.post("tut01.py",
+		{
+			name: "Doesn't Matter"
+		},
+		function(data, status){
+			alert("Data: ", + data + "\nStatus: " + status);
+		});
+	});
+});
 
 </script>
+-->
+</head>
+<!--
+<form id = "post_form">
+	From:<br>
+	<input type="text" id="frm" name="from"><br>
+	To:<br>
+	<input type="text" name="end"><br>
+	<button onclick="post_data()" name="button"></button>
+</form>
+-->
+<button >DO IT!</button>
+<!--
+<form action = "cgi.py" method = "post">
+First Name: <input type = "text" name = "first_name"><br />
+Last Name: <input type = "text" name = "last_name" />
+
+<input type = "submit" value = "Submit" />
+</form>
+-->
+</body>
+
