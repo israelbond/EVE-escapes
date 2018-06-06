@@ -1,5 +1,5 @@
 body, html {
-    background-color: cornflowerblue;
+    //background-color: cornflowerblue;
     border: 5px darkred;
     height: 100%;
     display: grid;
@@ -20,7 +20,7 @@ table{
 th {
     column-rule-style: groove;
     background-color: darkcyan;
-    border: 2px solid black ;
+    border: 2px solid yellow ;
 }
 
 .content {
