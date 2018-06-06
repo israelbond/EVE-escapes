@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel = "stylesheet" href = "styles.css">
+	<!--formatting the table objects-->
+	<style> table, td { alignment: center; border: 1px solid black ; }</style>
+<meta charset="utf-8"/>
+<!-- script that tag that run load_file.js and puts them into the "system_table"-->
+<script type="text/javascript" src="load_file.js"></script>
+</head>
+<body>
+	<table>
+		<wth style="background-color: burlywood"> system name </wth>
+		<th style="background-color: darkgoldenrod"> system id </th>
+		<th style="background-color: deepskyblue"> connections </th>
+	</table>
+<!-- Note how we use table id in the javascript function in load_file.js-->
+	<table id="system_table">
+	</table>
+	<button id="escape" type = "button" onclick = "func_escape()"><img src="btn-escape.png"></button>
+	<script>
+		function func_escape(){
+
+		}
+	</script>
+</body>
+</html>
