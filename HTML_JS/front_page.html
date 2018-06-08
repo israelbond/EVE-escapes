@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel = "stylesheet" type ="text/css" href = "styles.css">
+	<!--formatting the table objects-->
+<!--	<style> table, td { alignment: center; border: 1px solid black ; }</style> -->
+<meta charset="utf-8"/>
+<!-- script that tag that run load_file.js and puts them into the "system_table"-->
+<script type="text/javascript" src="loadpath.js"></script>
+</head>
+<body>
+<span>
+    <table class="content">
+        <th> Path </th>
+    </table>
+    <table class="content" id="path"></table>
+</span>
+<!-- Note how we use table id in the javascript function in load_file.js-->
+<!--	<button id="escape"><img src="btn-escape.png"></button> -->
+	<table id="system_table">
+	</table>
+	<button id="escape" type = "button" onclick = "func_escape()"><img src="Images/btn-escape.png"></button>
+	<script>
+		function func_escape(){
+
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body{
+    height: 1080px;
+    width: 1920px;
+    background-image: url("Images/background.png");
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+button{
+    display: inline-block;
+    height: 256px;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 256px;
+}
+span{
+    margin: auto;
+    vertical-align: center;
+    border: 5px blueviolet;
+}
+
+table{
+    text-align-all: left;
+    border: 3px aqua;
+    color: antiquewhite;
+}
+
+th {
+    column-rule-style: groove;
+    background-color: darkcyan;
+    border: 2px solid yellow ;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px
+}
