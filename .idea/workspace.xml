@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6f9223d-cb9c-468c-98b2-b4f89cb70cc8" name="Default" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/swaggerScripts/background-blank.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/swaggerScripts/background.png" beforeDir="false" />
@@ -31,6 +32,8 @@
       <change beforePath="$PROJECT_DIR$/swaggerScripts/btn-n0.8.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/swaggerScripts/btn-n0.9.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/swaggerScripts/btn-n1.0.png" beforeDir="false" />
+=======
+>>>>>>> 9adbb8cb8e801f972553b2f08e44ef75b34f0edb
       <change beforePath="$PROJECT_DIR$/swaggerScripts/loops_practice.html" beforeDir="false" afterPath="$PROJECT_DIR$/swaggerScripts/loops_practice.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,11 +45,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< HEAD
       <file leaf-file-name="loops_practice.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/swaggerScripts/loops_practice.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-287">
               <caret column="4" selection-start-column="4" selection-end-column="4" />
+=======
+      <file leaf-file-name="loops_practice.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HTML_JS/loops_practice.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loops_practice.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/swaggerScripts/loops_practice.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+>>>>>>> 9adbb8cb8e801f972553b2f08e44ef75b34f0edb
             </state>
           </provider>
         </entry>
@@ -90,21 +110,6 @@
               <item name="EVE-escapes" type="b2602c69:ProjectViewProjectNode" />
               <item name="EVE-escapes" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="EVE-escapes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EVE-escapes" type="462c0819:PsiDirectoryNode" />
-              <item name="HTML_JS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EVE-escapes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EVE-escapes" type="462c0819:PsiDirectoryNode" />
-              <item name="sqlite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EVE-escapes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EVE-escapes" type="462c0819:PsiDirectoryNode" />
-              <item name="swaggerScripts" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -143,6 +148,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="JavaScript Debug.loops_practice.html (1)">
     <configuration name="loops_practice.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/EVE-escapes/swaggerScripts/loops_practice.html" />
     <configuration name="loops_practice.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/EVE-escapes/HTML_JS/loops_practice.html" />
@@ -153,6 +159,12 @@
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.loops_practice.html (1)" />
+=======
+  <component name="RunManager">
+    <configuration name="loops_practice.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/EVE-escapes/swaggerScripts/loops_practice.html" />
+    <recent_temporary>
+      <list>
+>>>>>>> 9adbb8cb8e801f972553b2f08e44ef75b34f0edb
         <item itemvalue="JavaScript Debug.loops_practice.html" />
       </list>
     </recent_temporary>
@@ -180,8 +192,14 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3529412" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25036603" />
+=======
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3299435" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="right" id="R Packages" order="3" />
+>>>>>>> 9adbb8cb8e801f972553b2f08e44ef75b34f0edb
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -206,6 +224,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-612" />
@@ -218,6 +237,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-287">
           <caret column="4" selection-start-column="4" selection-end-column="4" />
+=======
+    <entry file="file://$PROJECT_DIR$/HTML_JS/loops_practice.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swaggerScripts/loops_practice.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+>>>>>>> 9adbb8cb8e801f972553b2f08e44ef75b34f0edb
         </state>
       </provider>
     </entry>
