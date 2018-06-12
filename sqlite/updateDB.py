@@ -5,9 +5,12 @@ import time
 from datetime import datetime
 from datetime import timedelta
 
-#updates sqlite database with kill data from CCP and Zkillboard via reisq.zkillboard
-#credit for zkillboard
+'''
+updates sqlite database with kill data from CCP and Zkillboard via reisq.zkillboard
+credit for zkillboard data goes redisQ https://github.com/zKillboard/RedisQ
+'''
 
+#set up refresh time for CCP data. Their severs only update once an hour
 update_time = datetime.now() + timedelta(hours = 1)
 
 with urllib.request.urlopen('https://esi.tech.ccp.is/latest/universe/system_kills/') as h1:
@@ -15,39 +18,38 @@ with urllib.request.urlopen('https://esi.tech.ccp.is/latest/universe/system_kill
 #connect to local .db file
 db = sqlite3.connect('eve_system.db')
 c = db.cursor()
-#updates kills
+
+#updates kills 
 for system in universe_kills:
 	c.execute('''UPDATE systems SET kills = ? WHERE system_id = ?''', (system['ship_kills'], system['system_id']))                        
 	db.commit()
 
+#run continuously 
 while True: 
+	#Check to see if it's time to update
 	if datetime.now() >= update_time:
 		update_time = datetime.now() + timedelta(hours = 1)
-		print("loop hit!")
+		print("update timer reset")
 	#open connection to CCP to get kill data
 		with urllib.request.urlopen('https://esi.tech.ccp.is/latest/universe/system_kills/') as h1:
 			universe_kills = json.loads(h1.read().decode('utf-8'))
-	#connect to local .db file
-#		db = sqlite3.connect('eve_system.db')
-#		c = db.cursor()
-	#updates kills
+	#updates kills from CCP
 		for system in universe_kills:
 			c.execute('''UPDATE systems SET kills = ? WHERE system_id = ?''', (system['ship_kills'], system['system_id']))                        
 			db.commit()
+	#update kills from Zkillboard data via redisq
 	else:
-#		db = sqlite3.connect('eve_system.db')
-#		c = db.cursor()
 		webUrl = urllib.request.urlopen('https://redisq.zkillboard.com/listen.php')
 		data = webUrl.read() 
 		jData = json.loads(data.decode('utf-8'))
 		if jData['package'] is None:
 			time.sleep(60)
-			print("waiting..")
+			print("waiting for new data..")
 		try :
 			jData['package']['killmail']['victim']['character_id']
 			c.execute('''UPDATE systems SET kills = kills + ? WHERE system_id = ?''', ( 1, jData['package']['killmail']['solar_system_id']))
 			db.commit()
 			print("zKill")
 		except:
-			print("issue")
+			print("Zkill data with no victime character ID")
 			continue

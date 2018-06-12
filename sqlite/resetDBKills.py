@@ -1,7 +1,7 @@
 import json
 import sqlite3
 import urllib.request
-
+#early prototype to reset kill data in the sqlite3 database. Is not longer needed
 with open ('map_connections.json', 'r') as f:
     jsonMap = json.load(f)    
 
