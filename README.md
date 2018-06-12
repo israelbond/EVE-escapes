@@ -22,7 +22,7 @@ Provides a database built around system_ids and connections using kill data dire
     an example of the layout we were thinking of providing to the users. 
 * Kruskal's minimum-spanning-tree algorithm  
   * Was used to build a connected tree with the fewest edges of the least weight for every system in EVE.
-    * NOTE: this algorithm didn't work as intended; due to, a the algorithm not being robust enough to produce a path from the tree. Currently path_generator.py is providing a simple dijstra path from one system to another.
+    * NOTE: this algorithm didn't work as intended; due to, a the algorithm not being robust enough to produce a path from the tree. Currently path_generator.py is providing a simple dijstra path from one system to another using networkx python3 library.
      
 ## Build and install
 * Once the repository is downloaded you can run the updateDB.py using "python3 updateDB.py"to update the databse. Script will continually run and print to screen when data is updated. 
