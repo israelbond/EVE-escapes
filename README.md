@@ -1,4 +1,6 @@
 # **EVE-escapes**
+Copyright © 2018 EVE-escapes
+
 ## Authors:
 __Brian Allen: briallen@pdx.edu__  
 __Gavin Balakrishnan: gavin4@pdx.edu__  
