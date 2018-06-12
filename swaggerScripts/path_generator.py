@@ -1,3 +1,8 @@
+# Copyright © 2018 EVE-escapes
+# [This program is licensed under the "GNU General Public License"]
+# Please see the file LICENSE in the source
+# distribution of this software for license terms.
+
 #citation goes to networkx documentaion: https://networkx.github.io/documentation/latest/_downloads/networkx_reference.pdf
 import networkx as nx
 import json
