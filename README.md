@@ -11,7 +11,7 @@ Most players could benefit from being able to create a shortest path to a locati
 based on amount of kills in a system.  
 
 This is the perfect starting point for any EVE mapping development. 
-Provides a database built around system_ids and connections using kill data directly fromCCP and zkilboard.
+Provides a database built around system_ids and connections using kill data directly from CCP and zkilboard.
   
 ### Other software contributions
 * Web framework with:
