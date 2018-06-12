@@ -21,9 +21,8 @@ Provides a database built around system_ids and connections.
     * NOTE: the framework is very simplistic and doesn't interface with the server yet but can be ran to see 
     an example of the layout we were thinking of providing to the users. 
 * Kruskal's minimum-spanning-tree algorithm  
-  * Was used to find the least possible weight that connects any two systems.
-    * NOTE: this algorithm didn't work as intended as establishing appropriate weights is complex when 
-    defining a shortest path in the universe.
+  * Was used to build a connected tree with the fewest edges of the least weight.
+    * NOTE: this algorithm didn't work as intended; due to, a the algorithm not being robust enough to produce a path from the tree.
      
 ## Build and install
 Once the repository is downloaded you can run the independent .html files to produce a web page.
