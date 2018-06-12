@@ -33,3 +33,9 @@ Provides a database built around system_ids and connections using kill data dire
 
 
 The files used in this project are Python3.6 with Networkx library, CSS, HTML, JavaScript, while using JSON files for formatted input.
+
+## Acknowledgments
+
+* Shout out to po huit and his github for putting together a json dump of the eve universe.
+* Shout out to Networkx for putting having such an easy to use graph and algorithms. 
+* A final thanks to the https://github.com/zKillboard/RedisQ for putting together the website for getting zkill data.
