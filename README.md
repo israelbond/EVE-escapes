@@ -36,6 +36,6 @@ The files used in this project are Python3.6 with Networkx library, CSS, HTML, J
 
 ## Acknowledgments
 
-* Shout out to po huit and his github for putting together a json dump of the eve universe.
-* Shout out to Networkx for putting having such an easy to use graph and algorithms. 
+* Shout out to po huit and his github for putting together a json dump of the eve universe. https://github.com/PoHuit/plan-b
+* Shout out to Networkx for putting having such an easy to use graph and algorithms. https://networkx.github.io/ 
 * A final thanks to the https://github.com/zKillboard/RedisQ for putting together the website for getting zkill data.
