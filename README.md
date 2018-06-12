@@ -25,10 +25,10 @@ Provides a database built around system_ids and connections using kill data dire
     * NOTE: this algorithm didn't work as intended; due to, a the algorithm not being robust enough to produce a path from the tree. Currently path_generator.py is providing a simple dijstra path from one system to another.
      
 ## Build and install
-Markup: *Once the repository is downloaded you can run the updateDB.py using "python3 updateDB.py"to update the databse. Script will continually run and print to screen when data is updated. 
-*While the database is being updated, run "python3 path_generator.py 'sys_from' sys_to'". 
-*Ex "python3 path_generator Amarr Jita will return the shortest path with no kills from Amarr to Jita and print them to screen. 
-*The independent .html files can be run locally produce a web page--unfortunatley we were not able to get a web service up and running. 
+* Once the repository is downloaded you can run the updateDB.py using "python3 updateDB.py"to update the databse. Script will continually run and print to screen when data is updated. 
+* While the database is being updated, run "python3 path_generator.py 'sys_from' sys_to'". 
+* Ex "python3 path_generator Amarr Jita will return the shortest path with no kills from Amarr to Jita and print them to screen. 
+* The independent .html files can be run locally produce a web page--unfortunatley we were not able to get a web service up and running. 
 
 
 The files used in this project are Python3.6 with Networkx library, CSS, HTML, JavaScript, while using JSON files for formatted input.
