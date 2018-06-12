@@ -1,3 +1,5 @@
+'''This was the first attempt using esipy to get kill data from CCP. Quickly transistioned away from using esipy due to its slownes'''
+
 from esipy import App
 
 # App.create(url, strict=True)
