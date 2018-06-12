@@ -1,11 +1,11 @@
 #!/usr/bin/env python
-# -*- coding: UTF-8 -*-
 
-# enable debugging
-import cgitb
+import cgitb, cgi
+sys.path.insert(0,'networkxwork.py')
+import networkxwork as path
+form = cgi.FieldStorage()
 cgitb.enable()
-
-print "Content-Type: text/plain;charset=utf-8"
+#path.getPath("Amarr", "Jita")
+print ("Content-Type: text/plain;charset=utf-8")
 print
-
-print "Hello World!"
+print ("Hello World!")

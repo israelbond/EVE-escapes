@@ -8,10 +8,10 @@ __Samuel Strba: sstrba@pdx.edu__
 
 Command line application that supplies support to EVE Online players while they travel through the EVE universe.
 Most players could benefit from being able to create a shortest path to a location
-based on some security value or the amount of kills in a system.  
+based on amount of kills in a system.  
 
 This is the perfect starting point for any EVE mapping development. 
-Provides a database built around system_ids and connections.    
+Provides a database built around system_ids and connections using kill data directly fromCCP and zkilboard.
   
 ### Other software contributions
 * Web framework with:
@@ -25,5 +25,7 @@ Provides a database built around system_ids and connections.
     * NOTE: this algorithm didn't work as intended; due to, a the algorithm not being robust enough to produce a path from the tree. Currently networkxwork.py is providing a simple dijstra path from one system to another.
      
 ## Build and install
-Once the repository is downloaded you can run the independent .html files to produce a web page.
-The files used in this project are Python3.6, CSS, HTML, JavaScript, NetworkX, while using JSON files for formatted input.
+Once the repository is downloaded you can run the updateDB.py using "python3 updateDB.py"to update the databse. Script will continually run and print to screen when data is updated. While the database is being updated, run "path_generator.py 'sys_from' sys_to'". Ex "path_generator Amarr Jita will return the shortest path with no kills from Amarr to Jita and print them to screen. The independent .html files can be run locally produce a web page--unfortunatley we were not able to get a web service up and running. 
+
+
+The files used in this project are Python3.6 with Networkx library, CSS, HTML, JavaScript, while using JSON files for formatted input.
