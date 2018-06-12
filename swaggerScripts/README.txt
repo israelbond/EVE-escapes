@@ -1,8 +1,8 @@
-This folder is for our HTML, JS, and python scripts (until we merge to master and set up a new folder for all the HTML and js) 
+This folder is for our python scripts and graph algorithms. The no_longer_relevant folder contains protypes and some features that didn't pan out 
 
 *MST_algo.py and hashMap.py is code generating the graph needed to find a(safe) path through new eden
 
-*info.json was the original data dump from CCP from procured from Bart Massey.
+*info.json was the original data dump from CCP from procured from Po_huit git hub. Thanks Po!
 
 *killmap.json is an old altered form of map_connections and needs to be removed
 

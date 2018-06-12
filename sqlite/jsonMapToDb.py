@@ -3,7 +3,7 @@ import sqlite3
 #script that loads in map_connections.json to eve_system.db
 
 
-with open ('map_connections.json', 'r') as f:
+with open ('../swaggerScripts/map_connections.json', 'r') as f:
     jsonMap = json.load(f)    
 
 db = sqlite3.connect('eve_system.db')
