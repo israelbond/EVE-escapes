@@ -27,7 +27,7 @@ Provides a database built around system_ids and connections using kill data dire
 ## Build and install
 * Once the repository is downloaded you can run the updateDB.py using "python3 updateDB.py"to update the databse. Script will continually run and print to screen when data is updated. 
 * While the database is being updated, run "python3 path_generator.py 'sys_from' sys_to'". 
-* Ex "python3 path_generator Amarr Jita will return the shortest path with no kills from Amarr to Jita and print them to screen. 
+* Ex "python3 path_generator.py Amarr Jita" will return the shortest path with no kills from Amarr to Jita and print them to screen. 
 * The independent .html files can be run locally produce a web page--unfortunatley we were not able to get a web service up and running. 
 
 
