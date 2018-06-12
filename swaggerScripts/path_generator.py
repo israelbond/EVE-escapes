@@ -19,8 +19,6 @@ import sys
 from_sys = sys.argv[1]
 to_sys = sys.argv[2]
 
-
-
 #Needed dictionary for name data. Is a hackjob, I know. 
 with open('map_connections.json', 'r') as h1:
 	universe = json.load(h1)

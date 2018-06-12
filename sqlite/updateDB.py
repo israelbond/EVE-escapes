@@ -23,6 +23,7 @@ update_time = datetime.now() + timedelta(hours = 1)
 
 with urllib.request.urlopen('https://esi.tech.ccp.is/latest/universe/system_kills/') as h1:
 	universe_kills = json.loads(h1.read().decode('utf-8'))
+
 #connect to local .db file
 db = sqlite3.connect('eve_system.db')
 c = db.cursor()
@@ -34,18 +35,21 @@ for system in universe_kills:
 
 #run continuously 
 while True: 
-	#Check to see if it's time to update
+#Check to see if it's time to update
 	if datetime.now() >= update_time:
 		update_time = datetime.now() + timedelta(hours = 1)
 		print("update timer reset")
-	#open connection to CCP to get kill data
+	
+#open connection to CCP to get kill data
 		with urllib.request.urlopen('https://esi.tech.ccp.is/latest/universe/system_kills/') as h1:
 			universe_kills = json.loads(h1.read().decode('utf-8'))
-	#updates kills from CCP
+
+#updates kills from CCP
 		for system in universe_kills:
 			c.execute('''UPDATE systems SET kills = ? WHERE system_id = ?''', (system['ship_kills'], system['system_id']))                        
 			db.commit()
-	#update kills from Zkillboard data via redisq
+
+#update kills from Zkillboard data via redisq
 	else:
 		webUrl = urllib.request.urlopen('https://redisq.zkillboard.com/listen.php')
 		data = webUrl.read() 
