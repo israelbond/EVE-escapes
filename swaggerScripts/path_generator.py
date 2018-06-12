@@ -9,7 +9,7 @@ import json
 import sqlite3
 import sys
 '''Hard coded sqlite colums into setting up the graph. Need to create class to put query into dict.
-	col[0] = sys_id 
+	col[0] sys_id 
 	col[1] sys_name 
 	col[2] security_rating 
 	col[3] system_kills 
